@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.5.5</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.mhamadelitawi</groupId>
+	<artifactId>microservices</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>microservices</name>
+	<description>Microservices demo project for Spring Boot</description>
+
+	<!--There's no Src file here .. so the packaging isn't jar, it's pom it's used as a base configuration	-->
+	<packaging>pom</packaging>
+
+	<properties>
+		<java.version>11</java.version>
+	<!--get the version from pring-boot-starter-parent version tag -->
+		<spring-boot.version> 2.5.5 </spring-boot.version>
+
+		<!-- get the version from the maven-compiler-plugin tag -->
+		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+
+	</properties>
+
+	<!-- Move all dependecies to dependencyManagement	-->
+	<dependencyManagement>
+		<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+			<!-- add the version -->
+			<version>${spring-boot.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<!-- add the version -->
+			<version>${spring-boot.version}</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+	</dependencyManagement>
+	<build>
+
+<!--		add these plugins we get them from https://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-source-and-target.html-->
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler-plugin.version}</version>
+				<configuration>
+<!--					we comment these because we are using java 11-->
+<!--					<source>1.8</source>-->
+<!--					<target>1.8</target>-->
+<!--					since java 9 we started using release-->
+					<release>11</release>
+				</configuration>
+			</plugin>
+		</plugins>
+
+<!--		Move all plugins to pluginManagement-->
+		<pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<!-- add the version -->
+				<version>${spring-boot.version}</version>
+			</plugin>
+		</plugins>
+		</pluginManagement>
+	</build>
+
+</project>
