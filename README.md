@@ -2,9 +2,9 @@
 
 In this repo I am trying to implement a microservices architecture by using spring boot, kafka and elasticsearch with patterns and with an event-driven approach.
 
-####################################################
-*** the repo is under construction currently ***
-####################################################
+
+> the repo is under construction currently 
+
 
 Samples
 =============
