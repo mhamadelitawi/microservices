@@ -9,7 +9,7 @@ In this repo I am trying to implement a microservices architecture by using spri
 Samples
 =============
 
-In addition this repo will be used a samples of way of doing for:
+In addition this repo will be used a samples to show:
 - Multi module spring boot project
 - autowire injection 
 - constructor injection 
