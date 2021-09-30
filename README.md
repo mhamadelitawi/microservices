@@ -1,9 +1,16 @@
-# microservices
+# Microservices
 
 In this repo I am trying to implement a microservices architecture by using spring boot, kafka and elasticsearch with patterns and with an event-driven approach.
 
 
-> the repo is under construction currently 
+> **The repo is under construction currently** 
+
+Architecture 
+=============
+- twitter-to-kafka-service : the microservice is used to get tweets from twitter (credentials from your twitter developer account should be set in the `twitter4j.properties` file). 
+ A mock runner is already implemented in case you don't need to use twitter. 
+ To enable or disable the mock server modify `enable-mock-tweets` in `application.yml`
+
 
 
 Samples
@@ -28,6 +35,6 @@ name: Twitter 4J
 Usage: unofficial Java library for the Twitter API
 Link https://twitter4j.org
 
-name: Lorem ipsum
+name: Lorem ipsum 
 Usage: get random words and texts
 Link: https://www.lipsum.com
