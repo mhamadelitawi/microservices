@@ -32,10 +32,5 @@ In addition this repo will be used a sample to show:
 Useful links
 =============
 
-name: Twitter 4J
-Usage: unofficial Java library for the Twitter API
-Link https://twitter4j.org
-
-name: Lorem ipsum 
-Usage: get random words and texts
-Link: https://www.lipsum.com
+- Twitter 4J : unofficial Java library for the Twitter API (https://twitter4j.org)
+- Lorem ipsum : get random words and texts (https://www.lipsum.com)
