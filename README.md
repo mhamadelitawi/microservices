@@ -5,9 +5,12 @@ In this repo I am trying to implement a microservices architecture by using spri
 
 > **The repo is under construction currently** 
 
-Architecture 
+Modules Architecture 
 =============
-#### **1- twitter-to-kafka-service**
+#### **1- app-config-data**
+It contains the custom configuration module data. It's separated into a different module to reuse it easily in mainy modules.
+
+#### **2- twitter-to-kafka-service**
 the microservice is used to get tweets from twitter (credentials from your twitter developer account should be set in the `twitter4j.properties` file). 
 A mock runner is already implemented in case you don't need to use twitter. 
 To enable or disable the mock server modify `enable-mock-tweets` in `application.yml`
@@ -19,6 +22,7 @@ Samples
 
 In addition this repo will be used a sample to show:
 - Multi module spring boot project
+- Reusable module 
 - Autowire injection 
 - Constructor injection 
 - Multi properties configuration files
