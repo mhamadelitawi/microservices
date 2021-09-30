@@ -7,9 +7,10 @@ In this repo I am trying to implement a microservices architecture by using spri
 
 Architecture 
 =============
-- twitter-to-kafka-service : the microservice is used to get tweets from twitter (credentials from your twitter developer account should be set in the `twitter4j.properties` file). 
- A mock runner is already implemented in case you don't need to use twitter. 
- To enable or disable the mock server modify `enable-mock-tweets` in `application.yml`
+**twitter-to-kafka-service** : 
+the microservice is used to get tweets from twitter (credentials from your twitter developer account should be set in the `twitter4j.properties` file). 
+A mock runner is already implemented in case you don't need to use twitter. 
+To enable or disable the mock server modify `enable-mock-tweets` in `application.yml`
 
 
 
