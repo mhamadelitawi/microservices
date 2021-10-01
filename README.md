@@ -16,7 +16,7 @@ It contains common packages and functions. It's separated into a different modul
 #### **3- kafka**
 Contains all the submodules responsible of managing the communication with kafka like testing health, produce and consume.
 
-#### **3- twitter-to-kafka-service**
+#### **4- twitter-to-kafka-service**
 the microservice is used to get tweets from twitter (credentials from your twitter developer account should be set in the `twitter4j.properties` file). 
 A mock runner is already implemented in case you don't need to use twitter. 
 To enable or disable the mock server modify `enable-mock-tweets` in `application.yml`
