@@ -39,6 +39,7 @@ In addition this repo will be used a sample to show:
 - Custom exception
 - Date format
 - Add repository to Maven
+- Asynchronous call
 
 
 Useful links
