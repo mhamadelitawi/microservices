@@ -70,6 +70,16 @@
 				<artifactId>kafka-model</artifactId>
 				<version>${project.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>com.mhamadelitawi</groupId>
+				<artifactId>kafka-admin</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.mhamadelitawi</groupId>
+				<artifactId>kafka-producer</artifactId>
+				<version>${project.version}</version>
+			</dependency>
 
 
 
@@ -165,34 +175,27 @@
 
 		</dependencies>
 	</dependencyManagement>
-	<build>
 
-<!--		add these plugins we get them from https://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-source-and-target.html-->
+
+	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>${maven-compiler-plugin.version}</version>
 				<configuration>
-<!--					we comment these because we are using java 11-->
-<!--					<source>1.8</source>-->
-<!--					<target>1.8</target>-->
-<!--					since java 9 we started using release-->
 					<release>11</release>
 				</configuration>
 			</plugin>
 		</plugins>
-
-<!--		Move all plugins to pluginManagement-->
 		<pluginManagement>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<!-- add the version -->
-				<version>${spring-boot.version}</version>
-			</plugin>
-		</plugins>
+			<plugins>
+				<plugin>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-maven-plugin</artifactId>
+					<version>${spring-boot.version}</version>
+				</plugin>
+			</plugins>
 		</pluginManagement>
 	</build>
 
