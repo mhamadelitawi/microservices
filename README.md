@@ -8,9 +8,15 @@ In this repo I am trying to implement a microservices architecture by using spri
 Modules Architecture 
 =============
 #### **1- app-config-data**
-It contains the custom configuration module data. It's separated into a different module to reuse it easily in many modules.
+Mainly used to read the custom configuration files and inject them where needed
 
-#### **2- twitter-to-kafka-service**
+#### **2- common-config**
+It contains common packages and functions. It's separated into a different module to reuse it easily in many modules. 
+
+#### **3- kafka**
+Contains all the submodules responsible of managing the communication with kafka like testing health, produce and consume.
+
+#### **3- twitter-to-kafka-service**
 the microservice is used to get tweets from twitter (credentials from your twitter developer account should be set in the `twitter4j.properties` file). 
 A mock runner is already implemented in case you don't need to use twitter. 
 To enable or disable the mock server modify `enable-mock-tweets` in `application.yml`
