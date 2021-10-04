@@ -17,7 +17,7 @@
 		<version>2.5.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.mhamadelitawi</groupId>
+	<groupId>com.microservices</groupId>
 	<artifactId>microservices</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>microservices</name>
@@ -56,27 +56,27 @@
 
 			<!-- LOCAL -->
 			<dependency>
-				<groupId>com.mhamadelitawi</groupId>
+				<groupId>com.microservices</groupId>
 				<artifactId>app-config-data</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.mhamadelitawi</groupId>
+				<groupId>com.microservices</groupId>
 				<artifactId>common-config</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.mhamadelitawi</groupId>
+				<groupId>com.microservices</groupId>
 				<artifactId>kafka-model</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.mhamadelitawi</groupId>
+				<groupId>com.microservices</groupId>
 				<artifactId>kafka-admin</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.mhamadelitawi</groupId>
+				<groupId>com.microservices</groupId>
 				<artifactId>kafka-producer</artifactId>
 				<version>${project.version}</version>
 			</dependency>
