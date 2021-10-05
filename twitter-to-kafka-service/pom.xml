@@ -52,7 +52,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <image>
-                        <name>${project.groupId}/twitterToKafkaService:${project.version}</name>
+                        <name>${project.groupId}/twittertokafkaservice:${project.version}</name>
                     </image>
                 </configuration>
                 <executions>

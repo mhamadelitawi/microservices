@@ -1,6 +1,8 @@
 cd docker-compose
 docker-compose -f common.yml -f kafka_cluster.yml up
 
+docker-compose -f common.yml -f kafka_cluster.yml -f services up
+
 
 docker run -it --network=host confluentinc/cp-kafkacat kafkacat -L -b localhost:19092
 
@@ -9,4 +11,19 @@ docker run -it --network=host confluentinc/cp-kafkacat kafkacat -C -b localhost:
 
 kcat -L -b localhost:19092
 kcat -C -b localhost:19092 -t twitter-topic
+
+
+
+1.	Stop the container(s) using the following command:
+docker-compose down
+2.	Delete all containers using the following command:
+docker rm -f $(docker ps -a -q)
+3.	Delete all volumes using the following command:
+docker volume rm $(docker volume ls -q)
+4.	Restart the containers using the following command:
+docker-compose up -d
+
+
+docker rm -f $(docker ps -a -q)
+docker volume rm $(docker volume ls -q)
 

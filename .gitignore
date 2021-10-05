@@ -40,3 +40,5 @@ twitter-to-kafka-service/logs/
 twitter-to-kafka-service/logs/*.log
 twitter-to-kafka-service/logs/archived
 twitter-to-kafka-service/logs/archived/*.log
+twitter-to-kafka-service/twitter-to-kafka-service/logs/twitter-to-kafka-service
+twitter-to-kafka-service/twitter-to-kafka-service/logs/twitter-to-kafka-service/*.log
