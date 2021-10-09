@@ -132,6 +132,14 @@
 			</dependency>
 
 
+			<!-- used in our case to encrypt data in pom -->
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-security</artifactId>
+				<version>${spring-boot.version}</version>
+			</dependency>
+
+
 
 
 			<!-- https://mvnrepository.com/artifact/org.springframework.kafka/spring-kafka -->
