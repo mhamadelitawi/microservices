@@ -12,6 +12,8 @@ docker run -it --network=host confluentinc/cp-kafkacat kafkacat -C -b localhost:
 kcat -L -b localhost:19092
 kcat -C -b localhost:19092 -t twitter-topic
 
+cd docker-compose
+
 
 
 1.	Stop the container(s) using the following command:
