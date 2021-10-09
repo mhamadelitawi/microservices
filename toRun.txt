@@ -29,3 +29,12 @@ docker-compose up -d
 docker rm -f $(docker ps -a -q)
 docker volume rm $(docker volume ls -q)
 
+
+
+spring encrypt springCloud_Pwd! --key 'itawi'
+017b4d33be163e885126d77b5d34f7025798c5a4cc7e418a88983503a0c5fe1953272d4dd3d7003eed578078a723c4e5
+
+spring decrypt 017b4d33be163e885126d77b5d34f7025798c5a4cc7e418a88983503a0c5fe1953272d4dd3d7003eed578078a723c4e5 --key 'itawi'
+
+export ENCRYPT_KEY='itawi'
+add it to ~/.zprofile or ~/.bash_profile

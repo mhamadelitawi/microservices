@@ -55,4 +55,11 @@ Useful links
 - Kafka-Avro-Seralizer : it keeps a cache of registered schemas from the Schema Registry their schema IDs. (https://docs.confluent.io/platform/current/schema-registry/serdes-develop/serdes-avro.html)
 
 
+Side note
+=============
+Keys shouldn't be submitted to github. that's why it's good to encrypt them using a key. This key should be saved in environment varibale but here it's saved in bootstraps files in (twitter-to-kafka-service/src/main/resources/bootstrap.yml and config-server/src/main/resources/bootstrap.yml ).
 
+Following is an example how to add them as environment variable on mac
+`export ENCRYPT_KEY='itawi'` you can also add them to `~/.zprofile` or `~/.bash_profile`
+
+you can get an encrypted password using this key by attempting : `http://localhost:8888/encrypt` with 
