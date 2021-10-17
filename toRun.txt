@@ -38,3 +38,5 @@ spring decrypt 017b4d33be163e885126d77b5d34f7025798c5a4cc7e418a88983503a0c5fe195
 
 export ENCRYPT_KEY='itawi'
 add it to ~/.zprofile or ~/.bash_profile
+
+echo 'export ENCRYPT_KEY='itawi' >> ~/.bash_profile

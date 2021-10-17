@@ -5,9 +5,11 @@ spring:
     config:
       server:
         git:
-          #uri: file://Users/mhamadelitawi/IdeaProjects/microservices/config-server-repository
+          #instead of git you can use a local file
+          #uri: file://Users/****/IdeaProjects/microservices/config-server-repository
           uri: https://github.com/mhamadelitawi/microConf
           clone-on-start: true
+          #if the repo is private a key and a password should be added
 #          username:
 #          password:
           default-label: master
@@ -17,6 +19,6 @@ spring:
       name: spring_cloud_user
       password: '{cipher}017b4d33be163e885126d77b5d34f7025798c5a4cc7e418a88983503a0c5fe1953272d4dd3d7003eed578078a723c4e5'
       #password: springCloud_Pwd!
-#key can be saved in envirionement variable not here but it's done to be pushed to github
+#key in reality should be saved in an environment variable not here but it's done to be pushed to github
 encrypt:
   key: 'itawi'
